@@ -12,15 +12,17 @@
 
 Go to your radio script and put the following event in the Radio Event that updates the client's current radio channel. Ensure that you change the variable newRadioChannel to whatever variable is being sent.
 	
-	```lua
+	
 	TriggerEvent('angelicxs-PingTarget:RadioUpdate', newRadioChannel)
-	```
+	
 
 Go to the server side of your radio script and add this event to the bottom of it:
-	```lua
+	
+	
 	RegisterNetEvent('angelicxs-PingTarget:SendPing', function(radio, coords, entity)
 		TriggerClientEvent('angelicxs-PingTarget:ReceivePing', -1, radio, coords, entity)
 	end)
-	```
+	
+	
 ------------------------INSTAL NOTES----------------------------------
 ]]
