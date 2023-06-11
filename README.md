@@ -7,7 +7,7 @@
 -- More FREE scripts at: https://github.com/GouveiaXS/ 				--
 ----------------------------------------------------------------------
 
---[[
+
 ------------------------INSTAL NOTES----------------------------------
 
 Go to your radio script and put the following event in the Radio Event that updates the client's current radio channel. Ensure that you change the variable newRadioChannel to whatever variable is being sent.
@@ -25,4 +25,4 @@ Go to the server side of your radio script and add this event to the bottom of i
 	
 	
 ------------------------INSTAL NOTES----------------------------------
-]]
+
