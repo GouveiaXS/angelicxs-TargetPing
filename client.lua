@@ -48,6 +48,9 @@ end)
 RegisterNetEvent('angelicxs-PingTarget:ReceivePing', function(radio, coords, entity)
     local timer = (Config.PingTimer*100)
     if CurrentRadio == nil then return end
+    if entity then
+        entity = NetworkGetEntityFromNetworkId(entity)
+    end
     while CurrentRadio == radio do 
         local pCoords = GetEntityCoords(PlayerPedId())
         local dist = #(pCoords - coords)
@@ -77,6 +80,7 @@ CreateThread(function()
                 if distance2 < distance then
                     distance = distance2
                     coord = GetEntityCoords(entity)
+                    entity = NetworkGetNetworkIdFromEntity(entity)
                 end 
             end
             if distance <= Config.PingDistance then
