@@ -34,7 +34,7 @@ Config.PingSize = {
     z = 1.0
 }
 Config.Height = 1.5 -- How high off the object the marker is
-Config.PingCommand = 249 -- Button to press to ping when aiming (default G) https://docs.fivem.net/docs/game-references/controls/
+Config.PingCommand = 58 -- Button to press to ping when aiming (default G) https://docs.fivem.net/docs/game-references/controls/
 Config.PingProtection = 0 -- Time in seconds before another ping can be sent
 Config.RequireAimDownSights = true -- If false players can ping without aiming down weapon sights
 
