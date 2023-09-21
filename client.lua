@@ -81,6 +81,7 @@ CreateThread(function()
                     distance = distance2
                     coord = GetEntityCoords(entity)
                     entity = NetworkGetNetworkIdFromEntity(entity)
+                    SetNetworkIdExistsOnAllMachines(entity, true)
                 end 
             end
             if distance <= Config.PingDistance then
